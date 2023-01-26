@@ -1,6 +1,17 @@
 <h1>Lets Login to Formia offline.</h1>
 <p>Email</p>
-<input></input>
+<input id="eml"></input>
 <p>Password</p>
 <input id="pwd"></input>
+<button onclick="login()">Login</button>
+<button onclick="alert()">Get debug info</button>
 <h2>You will be redirected to the form once you get back online.</h2>
+<script>
+function alert() {
+  alert("Copied the text: " + e.value + p.value);
+}
+  function login() {
+  var p = document.getElementById("pwd").value;
+  var e = document.getElementById("eml").value;
+}
+</script>
